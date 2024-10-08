@@ -1,0 +1,113 @@
+body,
+html,
+* {
+    font-size: 10px;
+    /* setting of the root font size */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(95, 94, 121);
+}
+
+#navi-bar {
+    background-color: rgb(46, 45, 70);
+    height: 7vw;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    align-items: center;
+}
+
+#navi-title {
+    position: absolute;
+    left: 7.5%;
+    top: 25%;
+    font-size: 4rem;
+    color: whitesmoke;
+    /* add font later */
+}
+
+.navi-img {
+    position: absolute;
+    top: 7.5%;
+    height: 6vw;
+    width: 6vw;
+}
+
+#logo {
+    left: 0.5%;
+}
+
+#lines {
+    right: 0.5%;
+}
+
+#title-container {
+    background-image: url(img/water-background.png);
+    background-size: cover;
+    height: 50vw;
+}
+
+#color-filter {
+    background-color: rgba(26, 32, 79, 0.556);
+    height: 100%;
+    align-items: center;
+}
+
+#title {
+    color: whitesmoke;
+    font-size: 17rem;
+    text-align: center;
+    padding-top: 15rem;
+    /* add font later */
+}
+
+form {
+    background-color: rgb(12, 12, 38);
+    height: 7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 5px solid rgb(233, 232, 255);
+    border-left: none;
+    border-right: none;
+}
+
+.form-text {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 2.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    /* add font later */
+}
+
+.form-input {
+    height: 2.5rem;
+    width: 30rem;
+}
+
+#form-submit-button {
+    position: absolute;
+    right: 0%;
+    height: 6rem;
+    width: 8rem;
+    background-color: rgb(54, 47, 81);
+    border: none;
+    transition: all 2s;
+}
+
+#button-text {
+    text-align: center;
+    font-size: 1.5rem;
+    color: aliceblue;
+    /* add font later */
+}
+
+.container {
+    height: 90vw;
+}

@@ -4,31 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div id="navi-bar">
-        <h3 id="navi-title">Creat Your Gallery</h3>
-        <img src="" alt="logo" id="logo">
+        <h3 id="navi-title">Create Your Gallery</h3>
+        <img src="img/logo.png" alt="logo (jellyfishes)" class="navi-img" id="logo">
+        <img src="img/menu-lines.png" alt="menu lines" class="navi-img" id="lines">
     </div>
     <div id="title-container">
-        <h1>Create Your Own Gallery</h1>
+        <div id="color-filter">
+            <h1 id="title">Create Your Own Gallery</h1>
+        </div>
     </div>
     <div id="form-container">
         <form action="">
-            <p class="form-text">Title</p>
+            <p class="form-text">Title: </p>
             <input class="form-input" id="input1" type="text">
-            <p class="form-text">Image URL</p>
+            <p class="form-text">Image URL: </p>
             <input class="form-input" id="input2" type="url">
-            <p class="form-text">Card Description</p>
+            <p class="form-text">Card Description: </p>
             <input class="form-input" type="text">
-            <button type="submit" id="form-submit-button">Create!</button>
+            <button type="submit" id="form-submit-button">
+                <p id="button-text">Create!</p>
+            </button>
         </form>
     </div>
     <marquee id="banner" behavior="alternate" direction="right">
         <img src="" alt="" id="banner-img">
     </marquee>
-    <div id="card-container"></div>
+    <div class="container">
+        <!-- insert cards here -->
+    </div>
+
+    <script src="app.js"></script> <!-- keep at the end of the body -->
 </body>
 
 </html>
