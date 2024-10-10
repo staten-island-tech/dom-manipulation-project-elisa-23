@@ -109,7 +109,25 @@ form {
 }
 
 .container {
-    height: 90vw;
+    display: flex;
+    width: 90vw;
+    margin: 2rem auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 25%;
+    height: 40rem;
+
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5rem;
 }
 
 /* //1920 x 1080 px (max screen size) */
