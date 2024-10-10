@@ -13,7 +13,7 @@ function inputCollector() {
         console.log("Default Action Prevented");
         let inputs = [DOMSelectors.input1.value, DOMSelectors.input2.value, DOMSelectors.input3.value];     /* text.value ==> gets the value inputted by the user */
         console.log(inputs);
-        DOMSelectors.container.insertAdjacentElement("beforeend", 
+        DOMSelectors.container.insertAdjacentHTML("beforeend", 
             `<div class="card">
             <h2 class="card-header">${inputs[0]}</h2>
             <img src="${inputs[2]}" alt="card image" class="card-img">
