@@ -135,6 +135,7 @@ form {
     font-size: 2.5rem;
     margin-top: 1.2rem;
     color: azure;
+    text-align: center;
 }
 
 .card-img {
@@ -148,8 +149,21 @@ form {
     margin: 15px;
     font-size: 1.5rem;
     color: azure;
+    text-align: center;
 }
 
+.remove-btn {
+    width: 15%;
+    height: 10%;
+    background-color: rgb(141, 98, 129);
+    border: none;
+    align-items: center;
+}
 
+.remove-btn-text {
+    color: aliceblue;
+    font-size: 1rem;
+    text-align: center;
+}
 
 /* //1920 x 1080 px (max screen size) */
