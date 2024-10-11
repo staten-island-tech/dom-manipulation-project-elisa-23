@@ -113,13 +113,12 @@ form {
     height: 90vw;
     margin: 2rem auto;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .card {
-    width: 25%;
+    width: 22%;
     height: 40rem;
     border-radius: 20px;
     background-color: rgb(46, 35, 68);

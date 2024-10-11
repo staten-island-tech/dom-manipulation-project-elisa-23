@@ -16,43 +16,25 @@ function createCard() {
         console.log(inputs);
         let id = cardCount + 1;
         DOMSelectors.container.insertAdjacentHTML("beforeend", 
-            `<div class="card">
-            <h2 class="card-header" id="card${id}">${inputs[0]}</h2>
+            `<div class="card" id="card${id}">
+            <h2 class="card-header">${inputs[0]}</h2>
             <img src="${inputs[1]}" alt="card image" class="card-img">
             <p class="card-desc">${inputs[2]}</p>
-            <button class="remove-btn" id="${id}">
+            <button type="button" class="remove-btn" id="${id}">
                 <p class="remove-btn-text">REMOVE</p>
             </button>
         </div>`
         );
         console.log("Card created: #" + id);
-    });
-}
-createCard();
-
-function removeCard() {
-    DOMSelectors.container.addEventListener("click", function(event){
-        const cards = document.querySelectorAll(".card");
-        const allRemoveBtns = document.querySelectorAll(".remove-btn");
-        const removeBtns = Array.from(allRemoveBtns);
-        console.log(removeBtns);
-        removeBtns.forEach((button)=>button.addEventListener("click", function(event) {
-            const id = button.getAttribute('id');
-            const cardID = "card" + id;
-            console.log(cardID);
-            let arrayOfCards=[];
-            if (!arrayOfCards.includes(cards.getAttribute('id'))) {
-                arrayOfCards.push(cards.getAttribute('id'));
-            }
-            arrayOfCards.forEach((card) => { if (card === cardID) {
-                if ((arrayOfCards.length) !== -1) {
-                    const removeEle = document.getElementById(card);
-                    removeEle.html.remove();
-                    console.log("Card Removed");
-                }
-        }});
+        const removeButtons = document.querySelectorAll(".remove-btn");
+        removeButtons.forEach((button)=>
+        button.addEventListener("click", function(event) {
+            event.preventDefault();
+            let card = document.getElementById('card'+button.getAttribute('id'));
+            console.log("Starting removal of card" + card);
+            card.remove();
+            console.log("Card removed.")
         }));
     });
 }
-
-removeCard();
+createCard();
