@@ -190,6 +190,12 @@ form {
 }
 
 @media screen and (max-width: 1450px) {
+    #title {
+        font-size: 18.5rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
     #navi-title {
         font-size: 4rem;
     }
