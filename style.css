@@ -27,7 +27,9 @@ body {
     top: 25%;
     font-size: 5rem;
     color: whitesmoke;
-    /* add font later */
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .navi-img {
@@ -59,10 +61,12 @@ body {
 
 #title {
     color: whitesmoke;
-    font-size: 20rem;
+    font-size: 25rem;
     text-align: center;
     padding-top: 15rem;
-    /* add font later */
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 form {
@@ -166,3 +170,5 @@ form {
 }
 
 /* //1920 x 1080 px (max screen size) */
+
+m
