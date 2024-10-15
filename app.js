@@ -8,23 +8,17 @@ DOMSelectors = {
 
 function Card() {
     DOMSelectors.form.addEventListener("submit", function(event) {
-        let cardCount = document.querySelectorAll(".card").length;
-        console.log("Form submitted");
-        event.preventDefault();
-        console.log("Default Action Prevented");
-        let id = cardCount + 1;
-        let object = {
-            header: DOMSelectors.input1.value,
-            imgUrl: DOMSelectors.input2.value,
-            description: DOMSelectors.input3.value
-        };
-        console.log(object);
-        createCard(object, id);
-        clearInputs()
+        event.preventDefault()
+        const card = makeCard();
+        addCard(card);
+        clearInputs();
+        removeCard();
+        /* createCard(object, id);
+        clearInputs() */
         //Create Card Code - look at function below
         /* DOMSelectors.container.insertAdjacentHTML("beforeend", card); */
-        console.log("Card created: #" + id);
-        removeCard();
+        /* console.log("Card created: #" + id);
+        removeCard(); */
         //Remove Card Button Code - look at function below
         /* const removeButtons = document.querySelectorAll(".remove-btn");
         removeButtons.forEach((button)=>
@@ -38,12 +32,27 @@ function Card() {
     });
 }
 
-function createCard(object, id) {
-    let card = `<div class="card" id="card${id}">
+function makeCard() {
+    let cardCount = document.querySelectorAll(".card").length;
+    console.log("Form submitted");
+    console.log("Default Action Prevented");
+    let id = cardCount + 1;
+    let object = {
+        header: DOMSelectors.input1.value,
+        imgUrl: DOMSelectors.input2.value,
+        description: DOMSelectors.input3.value,
+        id: id
+    };
+    console.log(object);
+    return object
+}
+
+function addCard(object) {
+    let card = `<div class="card" id="card${object.id}">
             <h2 class="card-header">${object.header}</h2>
             <img src="${object.imgUrl}" alt="card image" class="card-img">
             <p class="card-desc">${object.description}</p>
-            <button type="button" class="remove-btn" id="${id}">
+            <button type="button" class="remove-btn" id="${object.id}">
                 <p class="remove-btn-text">REMOVE</p>
             </button>
         </div>`;
@@ -68,7 +77,7 @@ function clearInputs() {
     DOMSelectors.input2.value = '';
     DOMSelectors.input3.value = '';
     let inputs = [DOMSelectors.input1.value, DOMSelectors.input2.value, DOMSelectors.input3.value];     /* text.value ==> gets the value inputted by the user */
-        console.log(inputs);        //checks if it actually cleared it
+    console.log(inputs);        //checks if it actually cleared it
 }
 
 Card();
