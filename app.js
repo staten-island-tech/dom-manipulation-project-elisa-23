@@ -13,22 +13,6 @@ function Card() {
         addCard(card);
         clearInputs();
         removeCard();
-        /* createCard(object, id);
-        clearInputs() */
-        //Create Card Code - look at function below
-        /* DOMSelectors.container.insertAdjacentHTML("beforeend", card); */
-        /* console.log("Card created: #" + id);
-        removeCard(); */
-        //Remove Card Button Code - look at function below
-        /* const removeButtons = document.querySelectorAll(".remove-btn");
-        removeButtons.forEach((button)=>
-        button.addEventListener("click", function(event) {
-            event.preventDefault();
-            let card = document.getElementById('card'+button.getAttribute('id'));
-            console.log("Starting removal of card" + card);
-            card.remove();
-            console.log("Card removed.");
-        })); */
     });
 }
 
