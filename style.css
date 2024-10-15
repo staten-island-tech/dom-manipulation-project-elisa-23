@@ -27,7 +27,9 @@ body {
     top: 25%;
     font-size: 5rem;
     color: whitesmoke;
-    /* add font later */
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .navi-img {
@@ -46,7 +48,7 @@ body {
 }
 
 #title-container {
-    background-image: url(img/water-background.png);
+    background-image: url(img/background.png);
     background-size: cover;
     height: 50vw;
 }
@@ -59,10 +61,12 @@ body {
 
 #title {
     color: whitesmoke;
-    font-size: 20rem;
+    font-size: 25rem;
     text-align: center;
     padding-top: 15rem;
-    /* add font later */
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 form {
@@ -166,3 +170,134 @@ form {
 }
 
 /* //1920 x 1080 px (max screen size) */
+
+@media screen and (max-width: 1600px) {
+    #navi-title {
+        top: 20%;
+    }
+
+    #title {
+        font-size: 20rem;
+    }
+
+    .form-text {
+        font-size: 2rem;
+    }
+
+    .form-input {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    #title {
+        font-size: 18.5rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #navi-title {
+        font-size: 4rem;
+    }
+
+    #title {
+        font-size: 15rem;
+    }
+
+    .form-input {
+        width: 20rem;
+    }
+
+    #form-submit-button {
+        width: 6rem;
+    }
+
+    .card {
+        width: 26%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #navi-title {
+        font-size: 3.5rem;
+    }
+
+    #title {
+        font-size: 12rem;
+    }
+
+    .form-input {
+        width: 18rem;
+    }
+
+    .card {
+        width: 43%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .form-input {
+        width: 14rem;
+    }
+
+    #title {
+        padding-top: 10rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #navi-title {
+        font-size: 2.5rem;
+    }
+
+    #title {
+        font-size: 9.5rem;
+    }
+
+    .form-text {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #navi-title {
+        font-size: 2rem;
+    }
+
+    #title {
+        padding-top: 7rem;
+        font-size: 7rem;
+    }
+
+    .form-input {
+        width: 18rem;
+    }
+
+    .card {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #navi-title {
+        font-size: 1.5rem;
+    }
+
+    #title {
+        font-size: 4.5rem;
+        padding-top: 5.5rem;
+    }
+
+    .form-input {
+        width: 8rem;
+    }
+
+    .remove-btn-text {
+        font-size: 0.8rem;
+    }
+
+}
