@@ -132,6 +132,11 @@ form {
     align-items: center;
     justify-content: space-evenly;
     margin-top: 5rem;
+    transition: all 0.75s;
+}
+
+.card:hover {
+    background-color: rgba(46, 35, 68, 0.45);
 }
 
 .card-header {
@@ -146,6 +151,14 @@ form {
     height: 45%;
     object-fit: cover;
     margin-top: 1.2rem;
+}
+
+.card-img:hover {
+    0% {}
+
+    100% {
+        top:
+    }
 }
 
 .card-desc {
